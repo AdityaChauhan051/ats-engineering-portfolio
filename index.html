@@ -696,7 +696,7 @@
       <span>Embedded firmware</span><span>PCB design</span><span>BLE / Wi-Fi / GSM</span><span>Sensors</span><span>Cloud &amp; OTA</span><span>EMS</span>
     </div>
     <div class="pc-proof">
-      <div><strong>05</strong><span>Engineering case studies</span></div>
+      <div><strong>03</strong><span>Engineering case studies</span></div>
       <div><strong>08</strong><span>Core service areas</span></div>
       <div><strong>15+</strong><span>Interfaces &amp; protocols</span></div>
     </div>
@@ -821,7 +821,7 @@
   </section>
 
   <div class="container stats-bar reveal">
-    <div class="stat"><strong>05</strong><span>Engineering case studies</span></div>
+    <div class="stat"><strong>03</strong><span>Engineering case studies</span></div>
     <div class="stat"><strong>05</strong><span>MCU / SoC families</span></div>
     <div class="stat"><strong>15+</strong><span>Interfaces &amp; protocols</span></div>
     <div class="stat"><strong>08</strong><span>Core service areas</span></div>
@@ -837,7 +837,7 @@
         <div class="about-copy reveal">
           <p class="about-lead">An electronics engineering partner built for the full product journey.</p>
           <p>ATS Design &amp; Innovation is a technology-driven company engaged in electronics product design, PCB development, embedded systems, IoT solutions and electronics manufacturing services (EMS). We build innovative, cost-effective and reliable electronic solutions for diverse industries, with a special focus on audio mantra products and smart bell solutions.</p>
-          <p>Our engineering work spans medical devices, marine monitoring, remote tracking, BLE sensor systems and cloud-connected IoT prototypes. Wherever the product sits, the discipline is the same: clear requirements, documented interfaces, verified hardware and firmware, and a clean handover.</p>
+          <p>Our engineering work spans medical devices, tracking devices, BLE sensor systems and cloud-connected IoT prototypes. Wherever the product sits, the discipline is the same: clear requirements, documented interfaces, verified hardware and firmware, and a clean handover.</p>
           <p>From a first proof of concept to bulk production, we stay accountable for the details that decide whether a product performs in the field — not just in the lab.</p>
         </div>
         <aside class="about-card reveal">
@@ -873,7 +873,6 @@
         <div class="industries-label">Industries &amp; applications</div>
         <div class="industry-chips">
           <span>Medical devices</span>
-          <span>Marine &amp; remote monitoring</span>
           <span>Tracking &amp; telematics</span>
           <span>BLE sensor systems</span>
           <span>Smart security</span>
@@ -1037,16 +1036,14 @@
       <div class="section-head reveal">
         <div class="section-tag">04 / Selected Engineering Work</div>
         <h2>Engineering case studies.</h2>
-        <p class="section-intro">Five programmes spanning embedded vision, remote tracking, medical firmware, BLE sensor systems and cloud-connected IoT. Each entry reflects hands-on engineering work — the platform, the interfaces and the problems solved. Development platforms are distinguished from production hardware; exact part numbers are confirmed against the target schematic and BOM.</p>
+        <p class="section-intro">Three programmes spanning medical firmware, BLE sensor systems and cloud-connected IoT. Each entry reflects hands-on engineering work — the platform, the interfaces and the problems solved. Development platforms are distinguished from production hardware; exact part numbers are confirmed against the target schematic and BOM.</p>
       </div>
       <div class="work-index reveal">
         <div class="work-index-label">Selected work at a glance</div>
         <div class="work-index-grid">
-          <div class="work-index-item"><span class="wi-num">01</span><b>Marine fish tracking</b><em>Embedded vision · NPU · UART/RS-485</em></div>
-          <div class="work-index-item"><span class="wi-num">02</span><b>Remote tracking</b><em>GSM · GPS · Iridium · BLE</em></div>
-          <div class="work-index-item"><span class="wi-num">03</span><b>Insulin pump firmware</b><em>STM32 · BLE · AES-CCM</em></div>
-          <div class="work-index-item"><span class="wi-num">04</span><b>BLE provisioning</b><em>Sensors · flash · OLED</em></div>
-          <div class="work-index-item"><span class="wi-num">05</span><b>ESP32 cloud OTA</b><em>Wi-Fi · MQTT · AWS S3</em></div>
+          <div class="work-index-item"><span class="wi-num">01</span><b>Insulin pump firmware</b><em>STM32 · BLE · AES-CCM</em></div>
+          <div class="work-index-item"><span class="wi-num">02</span><b>BLE provisioning</b><em>Sensors · flash · OLED</em></div>
+          <div class="work-index-item"><span class="wi-num">03</span><b>ESP32 cloud OTA</b><em>Wi-Fi · MQTT · AWS S3</em></div>
         </div>
       </div>
       <p class="work-note reveal">Each case study follows the same format: platform, interfaces, engineering work and relevance to a connected security product.</p>
@@ -1054,61 +1051,6 @@
         <article class="project reveal">
           <div class="project-top">
             <span class="project-num">CASE STUDY 01</span>
-            <div class="project-tags"><span class="tag">Embedded Vision</span><span class="tag">Edge AI</span><span class="tag">Marine</span></div>
-          </div>
-          <h3>Marine Fish Tracking &amp; Underwater Monitoring</h3>
-          <p class="project-summary">Embedded vision and marine monitoring development: capture underwater images, run image processing and AI inference, then send compact results to a companion communication device for delivery to a mobile application.</p>
-          <div class="project-body">
-            <div class="project-specs">
-              <div class="spec"><span>Platform / Hardware</span><p>STM32N6570-DK evaluation platform (STM32N6 family), B-CAMS-IMX camera module, IMX335 image sensor, onboard NPU, external Delphi Nanomodem communication unit.</p></div>
-              <div class="spec"><span>Interfaces / Protocols</span><p>UART and RS-485 between embedded/companion equipment; camera sensor interface and STM32N6 image/NPU pipeline.</p></div>
-            </div>
-            <div class="project-highlights">
-              <span class="hl-label">Engineering work</span>
-              <ul>
-                <li>Camera bring-up and image capture pipeline investigation on the STM32N6 platform.</li>
-                <li>AI model deployment exploration using STM32 AI tooling and ONNX/TFLite model workflows.</li>
-                <li>NPU-based inference investigation, including fish detection and compact result representation.</li>
-                <li>Image compression/encoding and compact data transfer design to reduce payload over the communication link.</li>
-                <li>Defined payload fields for detection identity, fish type, size-related information and metadata; planned UART/RS-485 integration to the external modem.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="project-foot"><span class="relevance-label">Relevant to</span><p>Hub-side event processing, edge intelligence, serial communication with radio/modem subsystems, structured payload design and efficient transmission of event information.</p></div>
-          <span class="scope-note"><strong>Scope note:</strong> The STM32N6570-DK is an evaluation platform used for development. Final production hardware, storage design and exact interface mapping depend on product requirements.</span>
-        </article>
-
-        <article class="project reveal">
-          <div class="project-top">
-            <span class="project-num">CASE STUDY 02</span>
-            <div class="project-tags"><span class="tag">Remote Tracking</span><span class="tag">Cellular</span><span class="tag">Satellite</span></div>
-          </div>
-          <h3>Marine / Remote Tracking &amp; Monitoring</h3>
-          <p class="project-summary">Firmware integration and system verification for a remote tracking platform combining location, cellular and satellite communications, BLE beacon detection and external depth/temperature sensor data.</p>
-          <div class="project-body">
-            <div class="project-specs">
-              <div class="spec"><span>Platform / Hardware</span><p>STM32-based embedded controller and Cavli modem integration environment; GSM/cellular modem, GPS receiver, Iridium satellite module, BLE beacon interface, external depth &amp; temperature sensor, configuration storage and debug/serial interfaces.</p></div>
-              <div class="spec"><span>Interfaces / Protocols</span><p>BLE, GSM, GPS, Iridium and UART/serial interfaces. Application-level configuration commands included DTADD, DTINT, DTRM, DT, DT?, II, ION and IRAL.</p></div>
-            </div>
-            <div class="project-highlights">
-              <span class="hl-label">Engineering work</span>
-              <ul>
-                <li>Implemented and verified configuration flows for BLE, GSM, GPS and satellite communication.</li>
-                <li>BLE beacon detection and retrieval of depth/temperature data; verified automatic disconnect and reconnect when a sensor moved out of range and returned.</li>
-                <li>Connection retry and recovery logic, including aborting a failed BLE connection attempt and restarting scanning.</li>
-                <li>Verified GPS capture intervals, GSM transmission intervals/timeouts, and transmission of waypoints and events to the server.</li>
-                <li>Tested store-and-forward, debug log retrieval and remote configuration; fixed configuration persistence and device identity issues, including synchronising modem IMEI information into configuration storage.</li>
-                <li>System-level testing with staging-server configuration, signal-strength and modem-registration dependencies.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="project-foot"><span class="relevance-label">Relevant to</span><p>Supervising remote wireless sensors, detecting missing devices, handling reconnection, processing alarms/events, maintaining diagnostics and forwarding information through cellular or backup paths.</p></div>
-          <span class="scope-note"><strong>Scope note:</strong> The programme included several hardware revisions and modem configurations. Exact MCU, modem model and pin-level peripheral assignments should be taken from the applicable schematic/BOM.</span>
-        </article>
-
-        <article class="project reveal">
-          <div class="project-top">
-            <span class="project-num">CASE STUDY 03</span>
             <div class="project-tags"><span class="tag">Medical</span><span class="tag">BLE</span><span class="tag">Security</span></div>
           </div>
           <h3>Insulin Pump Firmware &amp; Security</h3>
@@ -1135,7 +1077,7 @@
 
         <article class="project reveal">
           <div class="project-top">
-            <span class="project-num">CASE STUDY 04</span>
+            <span class="project-num">CASE STUDY 02</span>
             <div class="project-tags"><span class="tag">BLE</span><span class="tag">Sensors</span><span class="tag">Provisioning</span></div>
           </div>
           <h3>BLE Device Provisioning &amp; Sensor Integration</h3>
@@ -1161,7 +1103,7 @@
 
         <article class="project reveal">
           <div class="project-top">
-            <span class="project-num">CASE STUDY 05</span>
+            <span class="project-num">CASE STUDY 03</span>
             <div class="project-tags"><span class="tag">IoT</span><span class="tag">Cloud</span><span class="tag">OTA</span></div>
           </div>
           <h3>ESP32 Cloud OTA &amp; Device Control</h3>
